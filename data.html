@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>管理系统</title>
+    <style>
+ .sl{
+      width: 12rem;
+      position: fixed;
+      background: #283643;
+      top: 3.5rem;
+      bottom: 0;
+ }
+ .hv:hover{
+      background: #3c4248;
+ }
+ .tips{
+       background: orange;
+       border-radius: 40%;
+ }
+ .shouye{
+        position: fixed;
+        top: 3.5rem;
+        right: 0;
+        left: 12rem;
+ }
+ .bg-mengdi{
+    background: #e8e9e9;
+ }
+ .card{
+    margin: 14px;
+ }
+.kuan{
+    width: 551px;
+ }
+.a{
+    position: fixed;
+    top: 0;
+    left: 12rem;
+    right: 0;
+ }
+ .b{
+    margin-top: 80px;
+}
+.c{
+    position: relative;
+    left:25px;
+}
+.d{
+    position: relative;
+     right:5px;
+}
+</style>
+  </head>
+  <body>
+      <div class="container-fluid">
+        <div class="rows">
+          <nav class="navbar navbar-dark bg-primary fixed-top">
+            <a class="navbar-brand ml-3" href="index.html">管理系统</a>
+          <div class="dropdown mr-3">
+           <button class="btn btn-primary dropdown-toggle mr-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">用户操作</button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">个人中心</a>
+        <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">退出</a>
+        </div>
+    </div>
+        </nav>
+      <div class="sidebar-sticky sl pt-1 float-left col-lg-4">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+             <a class="nav-link text-light hv" href="index.html">首页</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link text-light hv" href="user.html">用户中心</a>
+          </li>
+         <li class="nav-item">
+            <a class="nav-link text-light hv" href="search.html">数据查询</a>
+          </li>
+          <li class="nav-item">
+            <a class="shadow-lg p-3 mb-1 bg-grey rounded nav-link text-light hv" href="data.html">数据面板 </a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link text-light hv" href="tip.html">提醒事项<span class=" ml-2 badge badge-pill tips badge-warning text-dark">4</span>
+          </a>
+        </li>
+    </ul>
+</div>
+      <div class="container-fluid col-lg-12 float-left a w-100">
+           <main class="d-inline-block col-lg-8">
+              <nav class="navbar navbar-light bg-mengdi shouye">
+                  <a class="navbar-brand ml-4" href="data.html">数据面板</a>
+              </nav>
+           </main>
+      <div class="row b">
+        <h6 class="border-bottom ml-4 mt-4 pb-2 col-lg-5" style="color: #6c757d">最新的10个用户</h6>
+          <h6 class="border-bottom ml-3 mt-4 pb-2 col-lg-5" style="color: #6c757d">最活跃的10个用户</h6>
+      </div>
+    <div class="row">
+      <table class="table table-striped table-bordered mt-3 mr-5 col-lg-5 c">
+        <thead>
+        <tr>
+          <th scope="col">用户id</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+        </thead>
+          <tbody>
+           <tr>
+             <th scope="row">1</th>
+             <td>Mark</td>
+             <td>Otto</td>
+             <td>@mdo</td>
+           </tr>
+           <tr>
+             <th scope="row">2</th>
+             <td>Jacob</td>
+             <td>Thornton</td>
+             <td>@fat</td>
+          </tr>
+           <tr>
+             <th scope="row">3</th>
+             <td>Larry</td>
+             <td>the Bird</td>
+             <td>@twitter</td>
+           </tr>
+           </tbody>
+              </table>
+                <table class="table table-striped table-bordered mt-3 col-lg-5 c">
+                  <thead>
+                    <tr>
+                      <th scope="col">用户id</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                   <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+            </tbody>
+      </table>
+    </div>
+  </div>
+ </div>
+</div>
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
